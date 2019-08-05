@@ -11,8 +11,8 @@
   "editor.fontWeight": "300",
   "editor.lineHeight": 24,
   "editor.letterSpacing": 0.5,
-  "editor.tabSize": 2,
-  "editor.cursorWidth": 2,
+  "editor.tabSize": 2,  
+  "editor.cursorWidth": 2, 
   "editor.cursorStyle": "line",
   "editor.wordWrap": "on",
   "editor.cursorBlinking": "solid",
@@ -44,4 +44,3 @@
   "prettier.arrowParens": "always",
   "prettier.endOfLine": "lf",
 }
-
