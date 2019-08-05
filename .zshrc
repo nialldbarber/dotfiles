@@ -4,7 +4,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 
 export DEFAULT_USER="$(whoami)"
 
-# Plugins
+# Plugins 
 plugins=(
   git
   zsh-autosuggestions
@@ -13,7 +13,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-EMOJIS=(💩 🚀 🍕 👽 ☕️ 💀 🐷 🐸 🍔 🍣 🍻 💾 🌞 🐌 😶 😎 👻 🥔 🤦)
+EMOJIS=(💩 🚀 🍕 👽 🔥 ☕️ 💀 🐸 🍔 🍣 🍻 😶 😎 🤓 👻 🥔 🤦 🔫 🤙🏼)
 SELECTED_EMOJI=${EMOJIS[$RANDOM % ${#EMOJIS[@]}]};
 
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
