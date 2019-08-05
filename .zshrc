@@ -2,6 +2,8 @@
 export ZSH="/Users/niall.barber/.oh-my-zsh"
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
+export DEFAULT_USER="$(whoami)"
+
 # Plugins
 plugins=(
   git
@@ -11,11 +13,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-zshcolors() {
-  for code ({000..255}) print -P -- "$code: %F{$code}This is how your text would look like%f"
-}
-
-EMOJIS=(💩 🚀 🍕 👽 ☕️ 🔬 💀 🐷 🐼 🐶 🐸 🐧 🐳 🍔 🍣 🍻 🔮 💰 💎 💾 🍪 🌞 🐌 🐓  😶 😎 👻 )
+EMOJIS=(💩 🚀 🍕 👽 ☕️ 💀 🐷 🐸 🍔 🍣 🍻 💾 🌞 🐌 😶 😎 👻 🥔 🤦)
 SELECTED_EMOJI=${EMOJIS[$RANDOM % ${#EMOJIS[@]}]};
 
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
