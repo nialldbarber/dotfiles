@@ -12,8 +12,9 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
 
-EMOJIS=(💩 🚀 🍕 👽 🔥 ☕️ 💀 🐸 🍔 🍣 🍻 😶 😎 🤓 👻 🥔 🤦 🔫 🤙🏼)
+EMOJIS=(💩 🚀 🍕 👽 🔥 ☕️ 💀 🍔 🍻 😶 😎 🤓 👻 🥔 🤦 🔫)
 SELECTED_EMOJI=${EMOJIS[$RANDOM % ${#EMOJIS[@]}]};
 
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
