@@ -2,7 +2,7 @@
   // Window 
   "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
   // Workbench
-  "workbench.colorTheme": "Subliminal Next",
+  "workbench.colorTheme": "Atom One Dark",
   "workbench.editor.tabSizing": "shrink",
   "workbench.sideBar.location": "left",
   // Editor 
@@ -11,8 +11,8 @@
   "editor.fontWeight": "300",
   "editor.lineHeight": 24,
   "editor.letterSpacing": 0.5,
-  "editor.tabSize": 2,  
-  "editor.cursorWidth": 2, 
+  "editor.tabSize": 2,
+  "editor.cursorWidth": 2,
   "editor.cursorStyle": "line",
   "editor.wordWrap": "on",
   "editor.cursorBlinking": "solid",
@@ -43,4 +43,10 @@
   "prettier.singleQuote": true,
   "prettier.arrowParens": "always",
   "prettier.endOfLine": "lf",
+  // VSCode custom stuff
+  "vscode_custom_css.imports": [
+    "file:///Users/niall.barber/custom-hacks.css"
+  ],
+  "vscode_custom_css.policy": true,
+  "workbench.startupEditor": "newUntitledFile",
 }
