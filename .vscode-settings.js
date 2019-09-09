@@ -5,6 +5,10 @@
   "workbench.colorTheme": "Atom One Dark",
   "workbench.editor.tabSizing": "shrink",
   "workbench.sideBar.location": "left",
+  "workbench.editor.enablePreview": false,
+  "workbench.startupEditor": "newUntitledFile",
+  // Explorer 
+  "explorer.openEditors.visible": 0,
   // Editor 
   "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 16,
@@ -29,6 +33,10 @@
   "editor.autoIndent": true,
   "editor.matchBrackets": true,
   "editor.useTabStops": true,
+  // Terminal 
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+  "terminal.integrated.shell.osx": "/bin/zsh",
   // Emmet
   "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {
@@ -40,6 +48,10 @@
     "*.js": "javascriptreact"
   },
   // Prettier 
+  // "prettier.disableLanguages": [
+  //   "javascript",
+  //   "javascriptreact"
+  // ],
   "prettier.singleQuote": true,
   "prettier.arrowParens": "always",
   "prettier.endOfLine": "lf",
@@ -48,5 +60,6 @@
     "file:///Users/niall.barber/custom-hacks.css"
   ],
   "vscode_custom_css.policy": true,
-  "workbench.startupEditor": "newUntitledFile",
+  // Svelte
+  "svelte.language-server.runtime": "/usr/local/bin/node"
 }
