@@ -6,7 +6,6 @@
   "workbench.editor.tabSizing": "shrink",
   "workbench.sideBar.location": "left",
   "workbench.editor.enablePreview": false,
-  "workbench.startupEditor": "newUntitledFile",
   // Explorer 
   "explorer.openEditors.visible": 0,
   // Editor 
@@ -33,33 +32,80 @@
   "editor.autoIndent": true,
   "editor.matchBrackets": true,
   "editor.useTabStops": true,
-  // Terminal 
-  "terminal.integrated.fontSize": 13,
-  "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
-  "terminal.integrated.shell.osx": "/bin/zsh",
   // Emmet
   "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
   },
   // Files 
   "files.insertFinalNewline": true,
   "files.associations": {
     "*.js": "javascriptreact"
   },
-  // Prettier 
   // "prettier.disableLanguages": [
   //   "javascript",
   //   "javascriptreact"
   // ],
+  "prettier.printWidth": 120,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "prettier.semi": true,
   "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "prettier.bracketSpacing": true,
+  "prettier.jsxBracketSameLine": false,
   "prettier.arrowParens": "always",
   "prettier.endOfLine": "lf",
+  // Eslint 
+  "eslint.autoFixOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "html",
+    "typescriptreact"
+  ],
+  "[javascriptreact]": {
+    "editor.formatOnSave": true
+  },
   // VSCode custom stuff
   "vscode_custom_css.imports": [
     "file:///Users/niall.barber/custom-hacks.css"
   ],
   "vscode_custom_css.policy": true,
-  // Svelte
-  "svelte.language-server.runtime": "/usr/local/bin/node"
+  "workbench.startupEditor": "newUntitledFile",
+  "svelte.language-server.runtime": "/usr/local/bin/node",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "cSpell.userWords": [
+    "babel",
+    "barchart",
+    "browserslist",
+    "camelcase",
+    "capitalise",
+    "devtool",
+    "dropdown",
+    "favourite",
+    "favourited",
+    "niall",
+    "organisation",
+    "polyfill",
+    "postgres",
+    "queries",
+    "refetch",
+    "rollups",
+    "settings",
+    "stabalises",
+    "subheader",
+    "timezone",
+    "todos",
+    "typeorm",
+    "usecase",
+    "wesbos",
+    "whitelabel"
+  ]
 }
