@@ -1,8 +1,6 @@
 {
   // Window 
   "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
-  // Workbench
-  "workbench.colorTheme": "Atom One Dark",
   "workbench.editor.tabSizing": "shrink",
   "workbench.sideBar.location": "left",
   "workbench.editor.enablePreview": false,
@@ -10,9 +8,9 @@
   "explorer.openEditors.visible": 0,
   // Editor 
   "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 16,
-  "editor.fontWeight": "300",
-  "editor.lineHeight": 24,
+  "editor.fontSize": 14.5,
+  "editor.fontWeight": "400",
+  "editor.lineHeight": 22,
   "editor.letterSpacing": 0.5,
   "editor.tabSize": 2,
   "editor.cursorWidth": 2,
@@ -29,9 +27,11 @@
   "editor.minimap.showSlider": "always",
   "editor.snippetSuggestions": "top",
   "editor.formatOnSave": true,
-  "editor.autoIndent": true,
-  "editor.matchBrackets": true,
+  "editor.autoIndent": "full",
+  "editor.matchBrackets": "always",
   "editor.useTabStops": true,
+  "editor.folding": false,
+  "editor.lineNumbers": "off",
   // Emmet
   "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {
@@ -43,10 +43,12 @@
   "files.associations": {
     "*.js": "javascriptreact"
   },
-  // "prettier.disableLanguages": [
-  //   "javascript",
-  //   "javascriptreact"
-  // ],
+  "prettier.disableLanguages": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact",
+  ],
   "prettier.printWidth": 120,
   "prettier.tabWidth": 2,
   "prettier.useTabs": false,
@@ -58,9 +60,11 @@
   "prettier.arrowParens": "always",
   "prettier.endOfLine": "lf",
   // Eslint 
-  "eslint.autoFixOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "[javascript]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
   },
   "eslint.validate": [
     "javascript",
@@ -78,20 +82,26 @@
   "vscode_custom_css.policy": true,
   "workbench.startupEditor": "newUntitledFile",
   "svelte.language-server.runtime": "/usr/local/bin/node",
-  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
   "terminal.integrated.shell.osx": "/bin/zsh",
   "cSpell.userWords": [
+    "antialiased",
+    "at",
     "babel",
     "barchart",
+    "breadcrums",
     "browserslist",
     "camelcase",
     "capitalise",
+    "component",
+    "crums",
     "devtool",
     "dropdown",
     "favourite",
     "favourited",
     "niall",
+    "node",
     "organisation",
     "polyfill",
     "postgres",
@@ -99,13 +109,30 @@
     "refetch",
     "rollups",
     "settings",
+    "signout",
     "stabalises",
     "subheader",
     "timezone",
     "todos",
     "typeorm",
+    "unmount",
     "usecase",
+    "vuex",
     "wesbos",
-    "whitelabel"
-  ]
+    "whitelabel",
+    "wifi"
+  ],
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "SubliminalR - Next",
+  "vsicons.dontShowNewVersionMessage": true,
+  // DA Changes
+  // "editor.hideCursorInOverviewRuler": true,
+  // "editor.matchBrackets": "never",
+  "editor.occurrencesHighlight": false,
+  "editor.overviewRulerBorder": false,
+  //"editor.renderIndentGuides": false,
+  "editor.renderLineHighlight": "none",
+  "window.zoomLevel": 0,
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.visible": false,
 }
