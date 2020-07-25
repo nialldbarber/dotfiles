@@ -1,5 +1,5 @@
 .monaco-shell {
-  font-family: 'Operator Mono', 'Inconsolata', monospace;
+  font-family: 'Dank Mono', 'Operator Mono', 'Inconsolata', monospace;
 }
 
 .monaco-workbench,
@@ -46,6 +46,14 @@
 .title-actions > .monaco-toolbar > .monaco-action-bar > .actions-container > .action-item > .action-label.icon.explorer-action {
   display: none !important;
 }
-.editor-actions > .monaco-toolbar > .monaco-action-bar {
-  display: none !important;
+
+.composite.title {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.monaco-editor .findMatch,
+.monaco-editor .selectionHighlight {
+  border: 1px solid rgb(255, 203, 107);
+  border-radius: 2px;
+  background: rgba(255, 203, 107, 0.3);
 }
