@@ -1,10 +1,11 @@
 module.exports = {
   config: {
     fontSize: 15,
-    fontFamily: '"Operator Mono", "Inconsolata for Powerline", monospace',
+    fontFamily: '"Dank Mono", "Operator Mono", "Inconsolata for Powerline", monospace',
     fontWeight: 'normal',
     fontWeightBold: 'bold',
     letterSpacing: 1,
+    lineHeight: 1,
     cursorColor: 'rgba(248,28,229,0.8)',
     wickedBorder: true,
     cursorAccentColor: '#000',
