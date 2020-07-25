@@ -1,92 +1,57 @@
 {
-  // Window 
+  // Window
   "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
+  "window.newWindowDimensions": "maximized",
+  // // Workbench
   "workbench.editor.tabSizing": "shrink",
   "workbench.sideBar.location": "left",
-  "workbench.editor.enablePreview": false,
-  // Explorer 
+  // // Explorer
   "explorer.openEditors.visible": 0,
-  // Editor 
-  "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 14.5,
+  // // Editor
+  "editor.fontFamily": "Dank Mono, Operator Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
   "editor.fontWeight": "400",
-  "editor.lineHeight": 22,
+  "editor.lineHeight": 21,
   "editor.letterSpacing": 0.5,
   "editor.tabSize": 2,
   "editor.cursorWidth": 2,
   "editor.cursorStyle": "line",
   "editor.wordWrap": "on",
   "editor.cursorBlinking": "solid",
-  "editor.colorDecorators": false,
   "editor.minimap.enabled": false,
-  "editor.renderWhitespace": "none",
-  "editor.rulers": [
-    80,
-    100
-  ],
-  "editor.minimap.showSlider": "always",
+  "editor.rulers": [80, 100],
   "editor.snippetSuggestions": "top",
   "editor.formatOnSave": true,
-  "editor.autoIndent": "full",
   "editor.matchBrackets": "always",
-  "editor.useTabStops": true,
-  "editor.folding": false,
-  "editor.lineNumbers": "off",
-  // Emmet
+  // // Emmet
   "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
-    "typescript": "typescriptreact",
+    "typescript": "typescriptreact"
   },
-  // Files 
-  "files.insertFinalNewline": true,
-  "files.associations": {
-    "*.js": "javascriptreact"
-  },
-  "prettier.disableLanguages": [
-    "javascript",
-    "typescript",
-    "javascriptreact",
-    "typescriptreact",
-  ],
-  "prettier.printWidth": 120,
-  "prettier.tabWidth": 2,
-  "prettier.useTabs": false,
-  "prettier.semi": true,
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "es5",
-  "prettier.bracketSpacing": true,
-  "prettier.jsxBracketSameLine": false,
-  "prettier.arrowParens": "always",
-  "prettier.endOfLine": "lf",
-  // Eslint 
+  // // Files
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll": true
   },
+  "javascript.validate.enable": false,
   "[javascript]": {
     "editor.formatOnSave": false
   },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "html",
-    "typescriptreact"
-  ],
+  "prettier.disableLanguages": ["javascript", "javascriptreact"],
   "[javascriptreact]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
   },
   // VSCode custom stuff
-  "vscode_custom_css.imports": [
-    "file:///Users/niall.barber/custom-hacks.css"
-  ],
-  "vscode_custom_css.policy": true,
-  "workbench.startupEditor": "newUntitledFile",
-  "svelte.language-server.runtime": "/usr/local/bin/node",
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+  "vscode_custom_css.imports": ["file:///Users/niall.barber/custom-hacks.css"],
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.cursorWidth": 1,
+  "terminal.integrated.fontFamily": "Dank Mono, Source Code Pro for Powerline",
   "terminal.integrated.shell.osx": "/bin/zsh",
   "cSpell.userWords": [
     "antialiased",
+    "api",
     "at",
     "babel",
     "barchart",
@@ -95,44 +60,49 @@
     "camelcase",
     "capitalise",
     "component",
+    "covid",
     "crums",
     "devtool",
+    "devtools",
     "dropdown",
+    "extension",
     "favourite",
     "favourited",
+    "firestore",
+    "formik",
+    "immer",
+    "mixins",
     "niall",
     "node",
     "organisation",
+    "page",
     "polyfill",
     "postgres",
     "queries",
+    "redux",
     "refetch",
     "rollups",
+    "serialised",
     "settings",
     "signout",
+    "spacex",
     "stabalises",
+    "state",
     "subheader",
     "timezone",
     "todos",
     "typeorm",
     "unmount",
+    "use",
     "usecase",
+    "uuidv",
     "vuex",
     "wesbos",
     "whitelabel",
     "wifi"
   ],
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "SubliminalR - Next",
-  "vsicons.dontShowNewVersionMessage": true,
-  // DA Changes
-  // "editor.hideCursorInOverviewRuler": true,
-  // "editor.matchBrackets": "never",
-  "editor.occurrencesHighlight": false,
-  "editor.overviewRulerBorder": false,
-  //"editor.renderIndentGuides": false,
-  "editor.renderLineHighlight": "none",
+  "workbench.colorTheme": "Palenight Operator",
+  "workbench.activityBar.visible": true,
   "window.zoomLevel": 0,
-  "workbench.statusBar.visible": false,
-  "workbench.activityBar.visible": false,
+  "workbench.startupEditor": "newUntitledFile"
 }
