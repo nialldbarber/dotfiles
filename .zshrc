@@ -7,6 +7,8 @@
 export ZSH="/Users/niallbarber/.oh-my-zsh"
 export DEFAULT_USER="$(whoami)"
 source $ZSH/oh-my-zsh.sh
+source /Users/niallbarber/nb-config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Plugins 
 plugins=(
