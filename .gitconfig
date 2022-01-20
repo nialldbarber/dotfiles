@@ -6,6 +6,8 @@
 [user]
 	name = Niall
 	email = nialldbarber@gmail.com
+[init]
+	defaultBranch = main
 [alias]
 	a = add .
 	br = branch
@@ -16,9 +18,14 @@
 	ac = commit -a
 	am = commit -am
 	cm = commit -m
+	i = init
 	last = log -1 HEAD
 	plog = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches
 	unstage = reset HEAD --
 	st = status
 	sts = status -s
 	p = push
+[color]
+	ui = auto
+[advice]
+	statusHints = true
