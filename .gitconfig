@@ -13,7 +13,8 @@
 	cb = checkout -b
 	co = checkout
 	c = clone
-	ac = commit -am
+	ac = commit -a
+	am = commit -am
 	cm = commit -m
 	last = log -1 HEAD
 	plog = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches
