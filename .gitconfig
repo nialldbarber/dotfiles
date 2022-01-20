@@ -20,3 +20,4 @@
 	unstage = reset HEAD --
 	st = status
 	sts = status -s
+	p = push
