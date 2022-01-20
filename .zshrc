@@ -27,8 +27,6 @@ unset config_file
 # Starship
 eval "$(starship init zsh)"
 
-export ANDROID_SDK=/Users/niallbarber/Library/Android/sdk
-
 #### FIG ENV VARIABLES ####
 # Please make sure this block is at the end of this file.
 [ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
