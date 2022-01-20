@@ -1,0 +1,27 @@
+# Functions
+mkcd () {
+  mkdir -p -- "$1" &&
+  cd -P -- "$1"
+}
+
+## Git: add, commit, push
+ggg () {
+  git add .
+  git commit -m "$1"
+  git push
+}
+
+## Push current git branch
+gpcb () {
+  ref=$(git symbolic-ref HEAD | cut -d'/' -f3)
+  git push -u origin $ref
+}
+
+## React Native:
+## Set up a package
+rnAddPackage() {
+  npm i --save "$1"
+  npx react-native link
+  npx pod-install ios
+  npx react-native run-ios
+}

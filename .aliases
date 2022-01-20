@@ -1,0 +1,33 @@
+# zsh stuff
+alias zshconfig="mate ~/.zshrc"
+alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# overrides
+alias ls="ls -G"
+alias ..='cd ..'
+alias cd..='cd ..'
+alias cd...='cd ../..'
+alias cd....='cd ../../..'
+alias cd.....='cd ../../../..'
+alias cd/='cd /'
+alias d='dirs -v'
+
+## Copy paths
+alias copypath='echo `pwd` | pbcopy'
+alias cdpath='cd "`pbpaste`"'
+
+# redo previous commmand with sudo
+alias plz='sudo $(fc -ln -1)'
+
+# Open chrome
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+
+# Override ZSH's built ins
+alias time="$(whence -p time)"
+
+# npm
+alias ns="npm start"
+alias ffs="rm -rf node_modules && rm package-lock.json && npm i"
+# symlink
+alias repo="cd ~/htdocs"
+

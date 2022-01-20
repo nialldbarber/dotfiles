@@ -1,0 +1,22 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Niall
+	email = nialldbarber@gmail.com
+[alias]
+	a = add .
+	br = branch
+	bra = branch -a
+	cb = checkout -b
+	co = checkout
+	c = clone
+	ac = commit -am
+	cm = commit -m
+	last = log -1 HEAD
+	plog = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches
+	unstage = reset HEAD --
+	st = status
+	sts = status -s

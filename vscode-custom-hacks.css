@@ -1,5 +1,5 @@
 .monaco-shell {
-  font-family: 'Dank Mono', 'Operator Mono', 'Inconsolata', monospace;
+  font-family: "Operator Mono", "Inconsolata", monospace;
 }
 
 .monaco-workbench,
@@ -7,7 +7,24 @@
   font-size: 14px;
 }
 
-.monaco-workbench .part.editor>.content .editor-group-container.active>.title .tabs-container>.tab.dirty>.tab-close .action-label:not(:hover):before, .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.dirty>.tab-close .action-label:not(:hover):before {
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container.active
+  > .title
+  .tabs-container
+  > .tab.dirty
+  > .tab-close
+  .action-label:not(:hover):before,
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab.dirty
+  > .tab-close
+  .action-label:not(:hover):before {
   color: #efc228;
 }
 
@@ -41,19 +58,4 @@
 .file-icon .label-name {
   font-weight: 400 !important;
   letter-spacing: 1.3;
-}
-
-.title-actions > .monaco-toolbar > .monaco-action-bar > .actions-container > .action-item > .action-label.icon.explorer-action {
-  display: none !important;
-}
-
-.composite.title {
-  background: rgba(0, 0, 0, 0.25);
-}
-
-.monaco-editor .findMatch,
-.monaco-editor .selectionHighlight {
-  border: 1px solid rgb(255, 203, 107);
-  border-radius: 2px;
-  background: rgba(255, 203, 107, 0.3);
 }

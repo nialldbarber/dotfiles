@@ -1,68 +1,38 @@
-fpath+=$HOME/.zsh/pure
-
-autoload -U promptinit; promptinit
-prompt pure
-
-setopt auto_cd
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the start of this file.
+[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
+#### END FIG ENV VARIABLES ####
 
 # Theme
-export ZSH="/Users/niall.barber/.oh-my-zsh"
+export ZSH="/Users/niallbarber/.oh-my-zsh"
 export DEFAULT_USER="$(whoami)"
+source $ZSH/oh-my-zsh.sh
 
-fortune | cowsay -f tux | lolcat
-
-# Plugins
+# Plugins 
 plugins=(
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
+  zsh-nvm
 )
 
-source $ZSH/oh-my-zsh.sh
+# Functions & aliases
+for config_file in ~/.{aliases,functions}; do
+    [ -r "$config_file" ] && source "$config_file"
+done
+unset config_file
 
-# Functions
-## Make directory && cd into it
-mkcd () {
-  mkdir -p -- "$1" &&
-  cd -P -- "$1"
-}
+# Starship
+eval "$(starship init zsh)"
 
-## Git: add, commit, push
-gacp () {
-  git add .
-  git commit -m "$1"
-  git push
-}
+export ANDROID_SDK=/Users/niallbarber/Library/Android/sdk
 
-## Push current git branch
-gpcb () {
-  ref=$(git symbolic-ref HEAD | cut -d'/' -f3)
-  git push -u origin $ref
-}
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the end of this file.
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####
 
-# Aliases
-# - Permissions
-alias plz='sudo $(fc -ln -1)'
-alias zshconfig="mate ~/.zshrc"
-alias ohmyzsh="mate ~/.oh-my-zsh"
-# - Git
-alias gc="git commit -m"
-alias gs="git status"
-alias gp="git push"
-alias ga="git add ."
-alias gcc="git checkout"
-alias gcb="git checkout -b"
-alias gp-u="git push -u origin"
-# Git Work
-alias gfp="git fetch pyrite"
-alias gpp="git pull pyrite"
-alias rrls="npm run reset && npm run lerna-bootstrap && npm run start"
-# - NPM
-alias ns="npm start"
-alias nbb="npm run build"
-alias nd="npm run dev"
-alias ffs="rm -rf package-lock.json node_modules && npm i"
-# - Travel
-alias go="cd ~/Git"
-# Taskbook
-alias tbt="tb --timeline"
+# nvm stuff
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
