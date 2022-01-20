@@ -18,9 +18,12 @@
 	ac = commit -a
 	am = commit -am
 	cm = commit -m
+	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+	di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
 	i = init
 	last = log -1 HEAD
 	plog = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches
+	l = log --pretty=oneline -n 20 --graph --abbrev-commit
 	unstage = reset HEAD --
 	st = status
 	sts = status -s
