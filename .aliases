@@ -4,13 +4,20 @@ alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # overrides
 alias ls="ls -G"
+alias l="ls -lF ${colorflag}"
 alias ..='cd ..'
 alias cd..='cd ..'
 alias cd...='cd ../..'
 alias cd....='cd ../../..'
 alias cd.....='cd ../../../..'
 alias cd/='cd /'
-alias d='dirs -v'
+
+# shortcuts
+alias d="cd ~/Documents"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias p="cd ~/projects"
+alias g="git"
 
 ## Copy paths
 alias copypath='echo `pwd` | pbcopy'
@@ -25,23 +32,9 @@ alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 # Override ZSH's built ins
 alias time="$(whence -p time)"
 
-# Git: to be removed 
-alias gc="git commit -m"
-alias gs="git status"
-alias gp="git push"
-alias ga="git add ."
-Alias gcc="git checkout"
-alias gcb="git checkout -b"
-alias gp-u="git push -u origin"
-alias gcl="git clone"
-alias glog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches"
-
 # npm
 alias ns="npm start"
 alias ffs="rm -rf node_modules && rm package-lock.json && npm i"
-
-# symlink
-alias repo="cd ~/htdocs"
 
 # tmux
 alias t="tmux"
