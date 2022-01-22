@@ -40,7 +40,13 @@ set incsearch
 call plug#begin('~/.vim/plugged')
     Plug 'gruvbox-community/gruvbox'
     Plug 'nvim-telescope/telescope.nvim'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    Plug 'junegunn/fzf', {'do': { -> fzf#install() }}
+    Plug 'junegunn/fzf.vim'
 call plug#end()
 
 colorscheme gruvbox
+nmap <leader>gd <Plug>(coc-definition)
+nmap <leader>gr <Plug>(coc-references)
+nnoremap <C-p> :GFiles<CR>
